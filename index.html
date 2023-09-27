@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TiempoDojo</title>
+</head>
+<body>
+    <nav>
+        <h1>DojoWeather</h1>
+        <div class="nav-links">
+            <div onclick="loadingCity()"> Burbank </div>
+            <div onclick="loadingCity()"> Chicago </div>
+            <div onclick="loadingCity()"> Dallas </div>
+        </div>
+    </nav>
+    <main>
+        <div class="encabezado">
+            <h2 class="sanJose">San Jose</h2>
+            <div>
+                <span> show temperature in <span>
+                <select id="seleccionar-temperatura" onchange="changeDegrees(this)">
+                    <option value="c">°C</option>
+                    <option value="f">°F</option>
+                </select>
+            </div>
+        </div>
+        <div class="pronosticos">
+            <div class="dia">
+                <h2>Today</h2>
+                <img class="imagen-clima" src="assets/some_rain.png" alt="Rainy">
+                <div> some rain </div>  
+                <div class="temperaturas">
+                    <div class="max">
+                        <span class="degrees">24</span>°
+                    </div>
+                    <div class="min">
+                        <span class="degrees">18</span>°   
+                    </div>
+                </div>
+            </div>
+            <div class="dia">
+                <h2>Tomorrow</h2>
+                <img class="imagen-clima" src="assets/some_sun.png" alt="Sunny">
+                <div> some sun </div>  
+                <div class="temperaturas">
+                    <div class="max">
+                        <span class="degrees">27</span>°
+                    </div>
+                    <div class="min">
+                        <span class="degrees">19</span>°   
+                    </div>
+                </div>
+            </div>
+            <div class="dia">
+                <h2>Friday</h2>
+                <img class="imagen-clima" src="assets/some_clouds.png" alt="Cloudy">
+                <div> some clouds </div>  
+                <div class="temperaturas">
+                    <div class="max">
+                        <span class="degrees">21</span>°
+                    </div>
+                    <div class="min">
+                        <span class="degrees">16</span>°   
+                    </div>
+                </div>
+            </div>
+            <div class="dia">
+                <h2>Saturday</h2>
+                <img class="imagen-clima" src="assets/some_sun.png" alt="Sunny">
+                <div> some sun </div>  
+                <div class="temperaturas">
+                    <div class="max">
+                        <span class="degrees">26</span>°
+                    </div>
+                    <div class="min">
+                        <span class="degrees">21</span>°   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="cookies-footer">
+            <div class="cookies-img">
+                <img src="assets/cookie.png" alt="cookie-img">
+            </div>
+            <div class="cookies-text">
+                <h2>Stop! Cookie time</h2>
+                <p> We use cookies (sadly not the edible ones) to personalize </p>
+                <p> content and ads, to provide social media features and to </p>
+                <p> analyse our traffic. <a href="#"> Read more... </a> </p>
+            </div>
+            <div class="cookies-btn">
+                <button id="btn" onclick="closeCookies(this)"> I Accept </button>
+            </div>
+        </div>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
